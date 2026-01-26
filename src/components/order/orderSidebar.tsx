@@ -28,7 +28,6 @@ export default function OrdersSidebar() {
         h-fit
       "
     >
-     
       <div className="flex items-center gap-3 p-4">
         <img
           src={user.avatar || "/Ellipse 3.svg"}
@@ -40,10 +39,10 @@ export default function OrdersSidebar() {
 
       <div className="h-px bg-neutral-200" />
 
-   
       <button
         type="button"
-        className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium hover:bg-neutral-100 cursor-pointer"
+        className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium  hover:text-red-600 cursor-pointer"
+        onClick={() => navigate("/profile")}
       >
         <img src="/marker-pin-01.svg" className="h-5 w-5" />
         Delivery Address
@@ -51,7 +50,8 @@ export default function OrdersSidebar() {
 
       <button
         type="button"
-        className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium text-red-600 hover:bg-neutral-100 cursor-pointer"
+        className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium hover:text-red-600 cursor-pointer"
+        onClick={() => navigate("/orders")}
       >
         <img src="/file-05.svg" className="h-5 w-5" />
         My Orders
@@ -60,7 +60,7 @@ export default function OrdersSidebar() {
       <button
         type="button"
         onClick={handleLogout}
-        className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium hover:bg-neutral-100 cursor-pointer"
+        className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium  hover:text-red-600 cursor-pointer"
       >
         <img src="/arrow-circle-broken-left.svg" className="h-5 w-5" />
         Logout

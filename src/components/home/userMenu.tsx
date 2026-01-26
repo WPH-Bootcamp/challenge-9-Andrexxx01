@@ -83,6 +83,7 @@ export default function UserMenu({ user }: Props) {
           <button
             type="button"
             className="flex w-full items-center gap-3 px-4 py-3 text-sm font-medium hover:bg-neutral-100 cursor-pointer"
+            onClick={() => navigate("/orders")}
           >
             <img src="/file-05.svg" className="h-5 w-5" />
             My Orders

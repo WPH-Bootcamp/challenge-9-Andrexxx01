@@ -108,11 +108,17 @@ export default function Footer() {
                 <li className="cursor-pointer hover:text-red-500">
                   Payment Methods
                 </li>
-                <li className="cursor-pointer hover:text-red-500">
+                <li
+                  className="cursor-pointer hover:text-red-500"
+                  onClick={() => navigate("/orders")}
+                >
+                  {" "}
                   Track My Order
                 </li>
                 <li className="cursor-pointer hover:text-red-500">FAQ</li>
-                <li className="cursor-pointer hover:text-red-500">Contact Us</li>
+                <li className="cursor-pointer hover:text-red-500">
+                  Contact Us
+                </li>
               </ul>
             </div>
           </div>

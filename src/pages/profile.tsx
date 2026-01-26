@@ -62,7 +62,7 @@ export default function ProfilePage() {
                   </div>
 
                   <button
-                    className="mt-6 h-12 w-full rounded-full bg-red-600 text-sm font-bold text-white hover:bg-red-700"
+                    className="mt-6 h-12 w-full rounded-full bg-red-600 text-sm font-bold text-white hover:bg-red-700 cursor-pointer"
                     onClick={() => {
                     
                     }}
