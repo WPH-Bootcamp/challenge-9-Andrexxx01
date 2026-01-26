@@ -74,7 +74,7 @@ export default function Header({ forceScrolled = false }: HeaderProps) {
               <img
                 src={scrolled ? "/Bag-fill-black.svg" : "/Bag.svg"}
                 alt="Cart"
-                className="h-7 w-7 md:h-8 md:w-8"
+                className="h-7 w-7 md:h-8 md:w-8 cursor-pointer"
               />
               {restaurantCount > 0 && (
                 <span
